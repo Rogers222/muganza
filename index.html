@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LogIn|Form</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+		*
+		{
+
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			font-family: 'Poppins',sans-serif;
+		}
+		body{
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #e8e8e8;
+		}
+		form{
+			width: 300px;
+			height: 400px;
+			####height: auto;
+			border: 2px solid white;
+			background-color:white;
+			####background: transparent;
+			border-radius: 10px;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+			}
+			.content{
+
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 18px;
+				margin-top: 45px;
+				padding: 10px 30px;
+			}
+			form input,button{
+				width: 100%;
+				height: 45px;
+				font-size: 1rem;
+				background: #e0dede;
+				padding: 10px;
+				border: none;
+				outline: none;
+				border-radius: 4px;
+
+			}
+			form button{
+				 
+				background-color: seagreen;
+				color: white;
+				cursor: pointer;
+				margin-top: 30px;
+				font-weight: 800;
+
+			}
+			form button:hover
+			{
+			 background: royalblue;
+			 transition:2s;
+			}
+			form h2
+			{
+				text-align: center;
+				font-weight: 1200;
+				color:seagreen;
+				margin-top: 10px;
+				padding-bottom: 10px;
+				border-bottom: 4px solid seagreen;
+			}
+			form label,a{
+				font-size: 0.9rem;
+				text-align: center;
+			}
+			.frmfooter{
+
+				text-align: center;
+				border-top: 2px solid silver;
+		 		 
+			}
+	</style>
+</head>
+<body>
+	<form action="" method="POST">
+		<h2>Welcome User</h2>
+		<div class="content">
+			<input type="text" name="uname" placeholder="Enter Username" autocomplete="off" required>
+			<input type="password" name="pswd" placeholder="Enter Password" autocomplete="off" required>
+			<button>LogIn</button>
+		</div><br>
+		<div class="frmfooter">
+			<label>Already have an Account?</label>  <a href="#">SignUp</a>
+		</div>
+
+	</form>
+</body>
+</html>
